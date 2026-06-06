@@ -9,8 +9,15 @@ describe('String Calculator', function () {
 
 	it('should return "Spaceship lost forever." for map without ship', function () {
 
-        expect(calculator.add('...')).toEqual('Spaceship lost forever.')
+		expect(calculator.add('...')).toEqual('Spaceship lost forever.')
 
-    })
+	})
+	it('should return "[2,0]"', function () {
+
+		expect(calculator.add('...\n..X')).toEqual([2, 0])
+
+	})
+
+
 
 });
