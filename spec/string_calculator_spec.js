@@ -9,7 +9,7 @@ describe('String Calculator', function () {
 
 	it('should return "Spaceship lost forever." for map without ship', function () {
 
-        expect(calculator.findSpaceship('...')).toEqual('Spaceship lost forever.')
+        expect(calculator.add('...')).toEqual('Spaceship lost forever.')
 
     })
 
