@@ -15,6 +15,17 @@ StringCalculator.prototype.add = function (string_numbers) {
 		return "Spaceship lost forever.";
 	}
 
+	let rows = string_numbers.split('\n');
+
+	for (let i = rows.length - 1; i >= 0; --i) {
+		for (let j = 0; j <= rows[i].length; ++j) {
+			if (rows[i][j] === 'X') {
+				let invertedI = rows.length-1 - i;
+				return [j, invertedI]
+			}
+		}
+	}
+
 
 
 
