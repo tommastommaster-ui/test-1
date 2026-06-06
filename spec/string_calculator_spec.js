@@ -18,6 +18,12 @@ describe('String Calculator', function () {
 
 	})
 
+	it('should return "[7,2]" for map without ship', function () {
+
+		expect(calculator.add('..........\n..........\n..........\n.......X..\n..........\n..........')).toEqual([7, 2])
+
+	})
+
 
 
 });
