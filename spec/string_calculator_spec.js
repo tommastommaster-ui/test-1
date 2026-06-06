@@ -3,12 +3,8 @@ describe('String Calculator', function () {
 		calculator = new StringCalculator();
 	});
 
-	it('should return "Spaceship lost forever." for an empty map', function () {
-		expect(calculator.findSpaceship('')).toEqual('Spaceship lost forever.');
+	it('should return Spaceship lost forever. for an empty map', function () {
+		expect(calculator.add('')).toEqual('Spaceship lost forever.');
 	});
-
-	
-
-
 
 });
